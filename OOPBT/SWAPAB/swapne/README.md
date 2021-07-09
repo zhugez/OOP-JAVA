@@ -1,7 +1,6 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
+Đây là bài swap 2 số A,B trong OOP JAVA. Do trong java sử dụng PassByValue cho nên ta không thể swap bằng cách như C được.
 ## Folder Structure
 
 The workspace contains two folders by default, where:
