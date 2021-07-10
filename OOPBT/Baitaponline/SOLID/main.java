@@ -1,14 +1,3 @@
-/**
- * main
- */
-/**
- * Blogger
- */
-public class Blogger {
-   private String name;
-   private int post;
-
-}
 
 public class main {
 
