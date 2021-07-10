@@ -3,6 +3,7 @@
 import java.util.*;
 
 public class App {
+    // Lam cai bien const cho gon code
     private static final String FAILED = "Oh noo !Failed! :((\n";
     private static final String SUCCESS = "Congratulations! Removing Sucessful! ^^\n";
 
