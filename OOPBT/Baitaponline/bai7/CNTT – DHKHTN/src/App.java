@@ -20,24 +20,22 @@ public class App {
                     System.out.print("Enter name: ");
                     String name = input.nextLine();
                     System.out.print("Enter age: ");
-                    int age = input.nextInt();
-                    input.nextLine();
+                    int age = Integer.parseInt(input.nextLine());
                     System.out.print("Enter hometown: ");
                     String hometown = input.nextLine();
                     System.out.print("Enter id: ");
                     String id = input.nextLine();
                     System.out.print("Enter salary: ");
-                    double salary = input.nextDouble();
+                    double salary = Double.parseDouble(input.nextLine());
                     System.out.print("Enter bonus: ");
-                    double bonus = input.nextDouble();
+                    double bonus = Double.parseDouble(input.nextLine());
                     System.out.print("Enter penaty: ");
-                    double penaty = input.nextDouble();
+                    double penaty = Double.parseDouble(input.nextLine());
                     System.out.print("Enter realsalary: ");
-                    double realsalary = input.nextDouble();
+                    double realsalary = Double.parseDouble(input.nextLine());
                     Teacher teacher = new Teacher(salary, bonus, penaty, realsalary, name, age, hometown, id);
                     manageTeacher.add(teacher);
                     System.out.println("Thêm thành công 1 cán bộ gv mới!!! ^^");
-                    input.nextLine();
                     break;
                 }
                 case "2": {// Xoa can bo gv thong qua id
