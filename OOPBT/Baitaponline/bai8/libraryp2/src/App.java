@@ -22,22 +22,20 @@ public class App {
                     System.out.print("Enter name: ");
                     String name = input.nextLine();
                     System.out.print("Enter age: ");
-                    int age = input.nextInt();
+                    int age = Integer.parseInt(input.nextLine());
                     System.out.print("Enter class: ");
-                    input.nextLine();
                     String sclass = input.nextLine();
                     System.out.print("Enter ID: ");
                     String id = input.nextLine();
                     System.out.print("Enter borrow date: ");
-                    int borrowDates = input.nextInt();
+                    int borrowDates = Integer.parseInt(input.nextLine());
                     System.out.print("Enter payment date: ");
-                    int paymentDates = input.nextInt();
+                    int paymentDates = Integer.parseInt(input.nextLine());
                     System.out.print("Enter book ID: ");
-                    int bookid = input.nextInt();
+                    int bookid = Integer.parseInt(input.nextLine());
                     Student student = new Student(name, age, sclass);
                     Card card = new Card(student, id, borrowDates, paymentDates, bookid);
                     manageCard.add(card);
-                    input.nextLine();
                     break;
                 }
                 case "2": {
