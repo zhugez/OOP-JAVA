@@ -22,7 +22,7 @@ public class App {
                             System.out.print("Enter name: ");
                             String name = scanner.nextLine();
                             System.out.print("Enter age:");
-                            int age = scanner.nextInt();
+                            int age = Integer.parseInt(Scanner.nextLine());
                             System.out.print("Enter gender: ");
                             scanner.nextLine();
                             String gender = scanner.nextLine();
@@ -40,14 +40,14 @@ public class App {
                             System.out.print("Enter name: ");
                             String name = scanner.nextLine();
                             System.out.print("Enter age:");
-                            int age = scanner.nextInt();
+                            int age = Integer.parseInt(Scanner.nextLine());
                             System.out.print("Enter gender: ");
                             scanner.nextLine();
                             String gender = scanner.nextLine();
                             System.out.print("Enter address: ");
                             String address = scanner.nextLine();
                             System.out.print("Enter level: ");
-                            int level = scanner.nextInt();
+                            int level = Integer.parseInt(Scanner.nextLine());
                             Officer worker = new Worker(name, age, gender, address, level);
                             managerOfficer.addOfficer(worker);
                             // System.out.println(worker.toString());
@@ -58,7 +58,7 @@ public class App {
                             System.out.print("Enter name: ");
                             String name = scanner.nextLine();
                             System.out.print("Enter age: ");
-                            int age = scanner.nextInt();
+                            int age =Integer.parseInt(Scanner.nextLine());
                             System.out.print("Enter gender: ");
                             scanner.nextLine();
                             String gender = scanner.nextLine();
