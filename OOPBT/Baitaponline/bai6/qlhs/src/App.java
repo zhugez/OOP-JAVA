@@ -20,16 +20,14 @@ public class App {
                     System.out.print("Enter name: ");
                     String name = input.nextLine();
                     System.out.print("Enter age: ");
-                    int age = input.nextInt();
-                    input.nextLine();
+                    int age = Integer.parseInt(input.nextLine());
                     System.out.print("Enter hometown: ");
                     String hometown = input.nextLine();
                     System.out.print("Enter class: ");
-                    int classStudent = input.nextInt();
+                    int classStudent = Integer.parseInt(input.nextLine());
                     Student student = new Student(name, age, hometown, classStudent);
                     school.add(student);
                     System.out.println("Thêm thành công 1 học sinh mới!!! ^^");
-                    input.nextLine();
                     break;
                 }
                 case "2": {
