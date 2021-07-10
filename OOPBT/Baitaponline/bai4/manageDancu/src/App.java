@@ -7,23 +7,20 @@ public class App {
         Town town = new Town();
         Scanner input = new Scanner(System.in);
         System.out.println(" Nhập n hộ dân:");
-        int n = input.nextInt();
+        int n = Integer.parseInt(input.nextLine());
         for (int i = 0; i < n; i++) {
             System.out.println("Enter address:");
-            input.nextLine();
             String address = input.nextLine();
             System.out.println("Enter number person");
-            int number = input.nextInt();
+            int number = Integer.parseInt(input.nextLine());
             List<Person> persons = new ArrayList<>();// Tao 1 arrayList person
             for (int j = 0; j < number; j++) {
                 // Nhap tung nguoi trong gia dinh
                 System.out.print("Enter name: ");
-                input.nextLine();
                 String name = input.nextLine();
                 System.out.print("Enter age: ");
-                int age = input.nextInt();
+                int age = Integer.parseInt(input.nextLine());
                 System.out.print("Enter job: ");
-                input.nextLine();
                 String job = input.nextLine();
                 System.out.println("Enter passport: ");
                 String passport = input.nextLine();
