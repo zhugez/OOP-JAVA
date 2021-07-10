@@ -18,9 +18,8 @@ public class App {
                     System.out.print("Enter name: ");
                     String name = scanner.nextLine();
                     System.out.print("Enter age: ");
-                    int age = scanner.nextInt();
+                    int age = Integer.parseInt(scanner.nextLine());
                     System.out.print("Enter passport: ");
-                    scanner.nextLine();
                     String passport = scanner.nextLine();
                     System.out.println("Input a to rent room type A.");
                     System.out.println("Input to rent room type B.");
@@ -38,10 +37,9 @@ public class App {
                         continue;
                     }
                     System.out.print("Enter number day for rent: ");
-                    int numberRent = scanner.nextInt();
+                    int numberRent = Integer.parseInt(scanner.nextLine());
                     Person person = new Person(name, age, passport, room, numberRent);
                     hotel.add(person);
-                    scanner.nextLine();
                     break;
                 }
                 case "2": {// Xoa thong tin nguoi thue phong bang Passport
