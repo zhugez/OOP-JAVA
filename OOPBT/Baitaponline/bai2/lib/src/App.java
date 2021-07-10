@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class App {
 
@@ -26,16 +26,14 @@ public class App {
                             System.out.print("Enter name of publisher: ");
                             String namepub = scanner.nextLine();
                             System.out.print("Enter circulation: ");
-                            int circ = scanner.nextInt();
+                            int circ = Integer.parseInt(scanner.nextLine());
                             System.out.print("Enter author: ");
-                            scanner.nextLine();
                             String author = scanner.nextLine();
                             System.out.print("Enter page number: ");
-                            int nop = scanner.nextInt();
+                            int nop = Integer.parseInt(scanner.nextLine());
                             Docs books = new Books(code, namepub, circ, author, nop);
                             manageDocs.addDocs(books);
                             // System.out.println(books.toString());
-                            scanner.nextLine();
                             break;
 
                         }
@@ -45,13 +43,12 @@ public class App {
                             System.out.print("Enter name of publisher: ");
                             String namepub = scanner.nextLine();
                             System.out.print("Enter circulation: ");
-                            int circ = scanner.nextInt();
+                            int circ = Integer.parseInt(scanner.nextLine());
                             System.out.print("Enter Day issue: ");
-                            int dayp = scanner.nextInt();
+                            int dayp = Integer.parseInt(scanner.nextLine());
                             Docs newspaper = new Newspapers(code, namepub, circ, dayp);
                             manageDocs.addDocs(newspaper);
                             // System.out.println(newspaper.toString());
-                            scanner.nextLine();
                             break;
                         }
                         case "c": {
@@ -60,15 +57,14 @@ public class App {
                             System.out.print("Enter name of publisher: ");
                             String namepub = scanner.nextLine();
                             System.out.print("Enter circulation: ");
-                            int circ = scanner.nextInt();
+                            int circ = Integer.parseInt(scanner.nextLine());
                             System.out.print("Enter issue number : ");
-                            int nopb = scanner.nextInt();
+                            int nopb = Integer.parseInt(scanner.nextLine());
                             System.out.print("Enter issue month : ");
-                            int monthp = scanner.nextInt();
+                            int monthp = Integer.parseInt(scanner.nextLine());
                             Docs Magazins = new Magazins(code, namepub, circ, nopb, monthp);
                             manageDocs.addDocs(Magazins);
                             // System.out.println(Magazins.toString());
-                            scanner.nextLine();
                             break;
                         }
                         default:
