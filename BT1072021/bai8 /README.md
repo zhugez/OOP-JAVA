@@ -12,6 +12,7 @@ Tạo 1 class Person (Ten, Tuoi, GioiTinh, DiaChi) , và các class con SinhVien
 - Collections : List, Array list,....
 - String buffer
 -  Lambda expression
+- Try- Catch
 - ...
 ## Folder Structure
 
