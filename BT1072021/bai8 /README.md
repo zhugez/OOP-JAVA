@@ -1,6 +1,6 @@
 ## Getting Started
 
-Welcome to my writeup .
+Welcome to my writeup.
 This is question:
 Tạo 1 class Person (Ten, Tuoi, GioiTinh, DiaChi) , và các class con SinhVien(MSSV,, DiemMon1, DiemMon2) Và Giang Vien((MSGV, HSL)
 - Viết phương thức  hiển thị thông tin tương ứng với mỗi đối tượng.
