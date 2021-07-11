@@ -10,6 +10,9 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
+        int age, MSSV, MSGV;
+        float DiemMon1, DiemMon2;
+        double HSL;
         manageSchool manageSchool = new manageSchool();
         while (true) {
             System.out.println("Application Manage School");
@@ -23,18 +26,46 @@ public class App {
                 case "1": { // Input info student
                     System.out.print("Enter name: ");
                     String name = input.nextLine();
-                    System.out.print("Enter age:");
-                    int age = Integer.parseInt(input.nextLine());
+                    while (true) {
+                        try {
+                            System.out.print("Enter age:");
+                            age = Integer.parseInt(input.nextLine());
+                            break;
+                        } catch (Exception e) {
+                            System.out.println(tryString);
+                        }
+                    }
                     System.out.print("Enter gender: ");
                     String gender = input.nextLine();
                     System.out.print("Enter address: ");
                     String address = input.nextLine();
-                    System.out.print("Enter MSSV: ");
-                    int MSSV = Integer.parseInt(input.nextLine());
-                    System.out.print("Enter Diem Mon 1: ");
-                    float DiemMon1 = Float.parseFloat(input.nextLine());
-                    System.out.print("Enter Diem Mon 2: ");
-                    float DiemMon2 = Float.parseFloat(input.nextLine());
+                    while (true) {
+                        try {
+                            System.out.print("Enter MSSV: ");
+                            MSSV = Integer.parseInt(input.nextLine());
+                            break;
+                        } catch (Exception e) {
+                            System.out.println(tryString);
+                        }
+                    }
+                    while (true) {
+                        try {
+                            System.out.print("Enter Diem Mon 1: ");
+                            DiemMon1 = Float.parseFloat(input.nextLine());
+                            break;
+                        } catch (Exception e) {
+                            System.out.println(tryString);
+                        }
+                    }
+                    while (true) {
+                        try {
+                            System.out.print("Enter Diem Mon 2: ");
+                            DiemMon2 = Float.parseFloat(input.nextLine());
+                            break;
+                        } catch (Exception e) {
+                            System.out.println(tryString);
+                        }
+                    }
                     manageSchool.addStudent(new Student(name, age, gender, address, MSSV, DiemMon1, DiemMon2));
                     System.out.println(done + "adding new student!");
                     break;
@@ -42,16 +73,37 @@ public class App {
                 case "2": {
                     System.out.print("Enter name: ");
                     String name = input.nextLine();
-                    System.out.print("Enter age:");
-                    int age = Integer.parseInt(input.nextLine());
+                    while (true) {
+                        try {
+                            System.out.print("Enter age:");
+                            age = Integer.parseInt(input.nextLine());
+                            break;
+                        } catch (Exception e) {
+                            System.out.println(tryString);
+                        }
+                    }
                     System.out.print("Enter gender: ");
                     String gender = input.nextLine();
                     System.out.print("Enter address: ");
                     String address = input.nextLine();
-                    System.out.print("Enter MSGV: ");
-                    int MSGV = Integer.parseInt(input.nextLine());
-                    System.out.print("Enter HSL: ");
-                    double HSL = Double.parseDouble(input.nextLine());
+                    while (true) {
+                        try {
+                            System.out.print("Enter MSGV: ");
+                            MSGV = Integer.parseInt(input.nextLine());
+                            break;
+                        } catch (Exception e) {
+                            System.out.println(tryString);
+                        }
+                    }
+                    while (true) {
+                        try {
+                            System.out.print("Enter HSL: ");
+                            HSL = Double.parseDouble(input.nextLine());
+                            break;
+                        } catch (Exception e) {
+                            System.out.println(tryString);
+                        }
+                    }
                     manageSchool.addTeacher(new Teacher(name, age, gender, address, MSGV, HSL));
                     System.out.println(done + "adding new teacher!");
                     break;
